@@ -73,13 +73,16 @@
 /* New Things Here */
 
 .album {
+  scale: 1.5;
+  /*
   position: relative;
   left: 50%;
-  width: 30em;
-  height: 30em;
-  margin-bottom: -13%;
-  overflow: hidden;
   transform: translate(-50%,-25%);
+  */
+  width: 15em;
+  height: 15em;
+  margin-bottom: 50%;
+  overflow: hidden;
   background-color: #111;
   border: 1px solid #111;
   border-radius: 50%;
