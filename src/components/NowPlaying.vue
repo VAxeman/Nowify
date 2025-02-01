@@ -5,13 +5,26 @@
       class="now-playing"
       :class="getNowPlayingClass()"
     >
-      <div class="now-playing__cover">
+      <!-- <div class="now-playing__cover">
         <img
           :src="player.trackAlbum.image"
           :alt="player.trackTitle"
           class="now-playing__image"
         />
+      </div> -->
+
+      <div class="player playing">
+        <div class="album">
+          <div class="cover">
+            <div><img
+            :src="player.trackAlbum.image"
+            :alt="player.trackTitle"
+            class="now-playing__image"/></div>
+          </div>
+        </div>
       </div>
+
+
       <div class="now-playing__details">
         <h1 class="now-playing__track" v-text="player.trackTitle"></h1>
         <h2 class="now-playing__artists" v-text="getTrackArtists"></h2>
@@ -22,6 +35,7 @@
     </div>
   </div>
 </template>
+
 
 <script>
 import * as Vibrant from 'node-vibrant'
@@ -304,3 +318,4 @@ export default {
 </script>
 
 <style src="@/styles/components/now-playing.scss" lang="scss" scoped></style>
+<style src="@/styles/components/disc-spin.css" lang="css" scoped></style>
