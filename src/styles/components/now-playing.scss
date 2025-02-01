@@ -72,19 +72,17 @@
 
 /* New Things Here */
 
-@media (max-width: 720px) and (max-height: 720px) {
+@media (min-width: 721px) and (min-height: 721px) {
   .album{
-    scale: 1.5;
-    position: static;
-    left: 0;
-    transform: translate(0%,0%);
+    scale: 1.0:
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-25%);
   }
 }
 
 .album {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%,-25%);
+  scale: 1.5;
   width: 15em;
   height: 15em;
   margin-bottom: 50%;
