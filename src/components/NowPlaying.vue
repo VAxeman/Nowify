@@ -318,4 +318,3 @@ export default {
 </script>
 
 <style src="@/styles/components/now-playing.scss" lang="scss" scoped></style>
-<style src="@/styles/components/disc-spin.css" lang="css" scoped></style>
